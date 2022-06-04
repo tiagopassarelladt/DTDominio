@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AAEF465C-1759-4670-9A2F-576D1BD3919A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DTDominio.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demo\Project3.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DTDominio">
+        <MSBuild Projects="DTDominio.dproj"/>
+    </Target>
+    <Target Name="DTDominio:Clean">
+        <MSBuild Projects="DTDominio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DTDominio:Make">
+        <MSBuild Projects="DTDominio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project3">
+        <MSBuild Projects="Demo\Project3.dproj"/>
+    </Target>
+    <Target Name="Project3:Clean">
+        <MSBuild Projects="Demo\Project3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project3:Make">
+        <MSBuild Projects="Demo\Project3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DTDominio;Project3"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DTDominio:Clean;Project3:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DTDominio:Make;Project3:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

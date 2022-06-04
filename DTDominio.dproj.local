@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/03/08 15:30:17.000.944,=rtl.dcp</Transaction>
+    <Transaction>2022/03/08 15:30:28.000.346,C:\Users\Tiago Passarella\Documents\Embarcadero\Studio\Projects\Package1.dproj=C:\Users\Tiago Passarella\Documents\Embarcadero\Studio\Projects\DTDominio.dproj</Transaction>
+    <Transaction>2022/03/08 15:31:48.000.592,C:\Users\Tiago Passarella\Documents\Embarcadero\Studio\Projects\DTDominio.dproj=D:\Dropbox\Componentes\DTDominio\DTDominio.dproj</Transaction>
+    <Transaction>2022/03/08 15:42:55.000.902,=D:\Dropbox\Componentes\DTDominio\Dominio.pas</Transaction>
+    <Transaction>2022/03/08 15:54:57.000.727,=vcl.dcp</Transaction>
+    <Transaction>2022/03/08 15:54:57.000.738,=vclie.dcp</Transaction>
+    <Transaction>2022/03/08 15:54:57.000.750,=VCLRESTComponents.dcp</Transaction>
+    <Transaction>2022/03/08 16:29:32.000.584,=IndySystem.dcp</Transaction>
+    <Transaction>2022/03/08 16:29:32.000.597,=IndyProtocols.dcp</Transaction>
+    <Transaction>2022/03/08 16:29:32.000.608,=IndyCore.dcp</Transaction>
+  </Transactions>
+</BorlandProject>
